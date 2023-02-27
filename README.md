@@ -27,13 +27,30 @@ You will need [Git](https://git-scm.com/) to clone this project.
 https://github.com/kovvik23/Int_array_sorting_algorithms_C.git
 ```
 
-CHANGE!
-  Then, before running the program use GCC to compile the program and make it executable `gcc main.c -o main`
+### To run the project
+For the time being, I haven't created a `make` file for this project so I recommend using an IDE to compile, assemble and run it.
 
-  Now you can just go to the folder where you saved the program and run main `./main`
+# To navigate the functions
+The options will be displayed to the screen. Use the relevant number keys on the keyboard to specify what you want to do.
 
+  For example
+  
+  <img src="https://user-images.githubusercontent.com/63119059/221648567-d5bc3285-6f43-4409-8a46-ab5d4b794e8b.png" width=50% height=50%>
+  
+  For example, here pressing "1" will start the visualization functionality of the program whereas pressing "2" will quit it. Pressing any other character (i.e. not "0", "1" or "2" )will result in an error message being dislayed to the screen.
+
+  
 
 ## Possible error messages
+
+| Error message | Meaning | Solution |
+| ----------- | ----------- | ----------- |
+| *Error. Invalid input, please make a valid choice.*| A different character was inputted and not one of those listed on the screen. | When the options are listed, please press the key that corresponds to your desired choice/ functionality. |
+| *Error opening file.* | Reading in of the file was unsuccessful. | Check that you entered the file path correctly and that the file exists then try again. |
+| Read-in unsuccessful. Please try again and enter a positive integer! | You did not consider the interval of the possible numbers that can be selected and entered a number outside this range. | Enter a positive integer for the visualisation or an array. |
+| *You've entered an invalid size* (*number), *please enter a valid size.* | You did not consider the interval of the possible numbers that can be selected and entered a number outside this range. | The size of the array for the visualisation needs to be between 2 and 119. Select an integer in this range. |
+
+*number - the number indicated above will always be a positive integer that is greater than 119.
 
 ## Specification
 ### Input
@@ -80,3 +97,13 @@ CHANGE!
 - Visualization
   - StandardVisualizer.c
 - main.c 
+
+## Further development and improvement
+
+1. Create a `make` file to help others compile and run this program.
+2. Sorting of arrays containing floats/doubles.
+3. Allow user to input each array element manually/ via std input.
+4. Reading in and writing to different types of files that the user can select.
+5. Allow user to change the character (highlight character) that is used for the visualisation.
+6. Allow users to input each array element manually/ via std input for visualisation as well, not using random number generator.
+7. Implementing a graphical interface for the visualization of the sorting algorithms.
